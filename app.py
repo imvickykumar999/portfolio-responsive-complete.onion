@@ -1,7 +1,7 @@
 
 # from HostTor import VicksTor
-# import VicksTor
-# VicksTor.run_server('flask')
+import VicksTor
+VicksTor.run_server('flask')
 
 from flask import (
     Flask, 
@@ -19,4 +19,7 @@ def hello_world():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run(debug = False)
+    app.run(
+        debug = True,
+        # debug = False,
+    )
